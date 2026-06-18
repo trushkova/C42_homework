@@ -5,21 +5,21 @@ import java.util.Arrays;
 public class Work4{
     public static void main(String[] args) {
         System.out.println("Задача 1");
-        doWork1();
+        showElements();
         System.out.println("Задача 2");
-        doWork2();
+        getMinMaxElements();
         System.out.println("Задача 3");
-        doWork3();
+        getIndexMinMax();
         System.out.println("Задача 4");
-        doWork4();
+        getZeroElements();
         System.out.println("Задача 5");
-        doWork5();
+        getRevers();
         System.out.println("Задача 6");
-        doWork6();
+        determineIncreasingSequence();
         System.out.println("Задача *");
-        doWork7();
+        getLength();
     }
-    public static void doWork1(){
+    public static void showElements(){
         int[] table = new int[3];
         table[0] = 1;
         table[1] = 2;
@@ -33,7 +33,7 @@ public class Work4{
         System.out.println("В обратном порядке: " + Arrays.toString(table));
     }
 
-    public static void doWork2(){
+    public static void getMinMaxElements(){
         double[] numbers = { 5.5, 12.3, 3.14, 99.9, 45.1 };
 
         double max = numbers[0];
@@ -41,14 +41,14 @@ public class Work4{
         for (int i = 1; i < numbers.length; i++) {
             max = Math.max(max, numbers[i]);
         }
-        for (int i = 1; i < numbers.length; i++) {
+        for (int i = 1; i > numbers.length; i--) {
             max = Math.min(min, numbers[i]);
         }
         System.out.println("Макс. значение: " + max);
         System.out.println("Мин. значение: " + min);
     }
 
-    public static void doWork3(){
+    public static void getIndexMinMax(){
         int[] table = new int[5];
         table[0] = 3;
         table[1] = 6;
@@ -68,7 +68,7 @@ public class Work4{
         System.out.println("Индекс макс. элемента: " + maxIndex);
     }
 
-    public static void doWork4(){
+    public static void getZeroElements(){
         int[] table = new int[3];
         table[0] = 2;
         table[1] = 1;
@@ -86,7 +86,7 @@ public class Work4{
         }
     }
 
-    public static void doWork5(){
+    public static void getRevers(){
         int[] table = new int[5];
         table[0] = 1;
         table[1] = 10;
@@ -101,7 +101,7 @@ public class Work4{
         System.out.println(Arrays.toString(table));
     }
 
-    public static void doWork6(){
+    public static void determineIncreasingSequence(){
         int [] table = new int[10];
         for (int i = 0; i < table.length; i++) {
             table[i] = (int)(Math.random()*100);
@@ -120,7 +120,7 @@ public class Work4{
             System.out.println("Массив не является строго возрастающей последовательностью");
    }
 }
-    public static int[] work7(int[] digits){
+    public static int[] getLength(int[] digits){
 
             int n = digits.length;
 
@@ -136,11 +136,11 @@ public class Work4{
             result[0] = 1;
             return result;
     }
-    public static void doWork7() {
+    public static void getLength() {
         int[] table = new int[3];
         table[0] = 2;
         table[1] = 1;
         table[2] = 3;
-        System.out.println(Arrays.toString(work7(table)));
+        System.out.println(Arrays.toString(getLength(table)));
     }
 }

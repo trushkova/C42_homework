@@ -5,17 +5,17 @@ import java.util.Scanner;
 public class Work3 {
     public static void main(String[] args) {
         System.out.println("Задача 1");
-        doWork1();
+        oddOrNot();
         System.out.println("Задача 2");
-        doWork2();
+        temperature();
         System.out.println("Задача 3");
-        doWork3();
+        squared();
         System.out.println("Задача 4");
-        doWork4();
+        subsequence();
         System.out.println("Задача *");
-        doWork5();
+        colculateSum();
     }
-    public static void doWork1(){
+    public static void oddOrNot(){
         Scanner input = new Scanner(System.in);
         System.out.print("Пожалуйста, введите число: ");
         int number = input.nextInt();
@@ -27,7 +27,7 @@ public class Work3 {
             System.out.println("Введено неверное значение");
         }
     }
-    public static void doWork2(){
+    public static void temperature(){
         Scanner input = new Scanner(System.in);
         System.out.print("Какая температура?: ");
         int temp = input.nextInt();
@@ -39,20 +39,20 @@ public class Work3 {
             System.out.println("Cold");
         }
     }
-    public static void doWork3(){
+    public static void squared(){
         int count = 10;
         while (count <= 20){
             System.out.println(count * count);
             count++;
         }
     }
-    public static void doWork4(){
+    public static void subsequence(){
         int count = 0;
         while(count <= 91){
             System.out.println(count = count + 7);
         }
     }
-    public static void doWork5(){
+    public static void colculateSum(){
         Scanner input = new Scanner(System.in);
         System.out.print("Пожалуйста, введите число: ");
         int number = 0;

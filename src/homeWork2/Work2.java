@@ -3,25 +3,25 @@ package homeWork2;
 public class Work2 {
     public static void main(String[] args) {
         System.out.println("Задача 1");
-        calculate1();
+        calculateFormula();
         System.out.println("Задача 2");
-        calculate2();
+        calculateSumN();
         System.out.println("Задача 3");
-        calculate3();
+        calculateThreeNumbers();
         System.out.println("Задача 4");
-        calculate4();
+        calculateInteger();
         System.out.println("Задача 5");
-        calculate5();
+        divisionRemainder();
         System.out.println("Задача *");
-        calculate6();
+        switc();
     }
 
-    public static void calculate1() {
+    public static void calculateFormula() {
         int b = 4;
         int c = 5;
         System.out.println("a=" + (4 * (b + c - 1) / 2));
     }
-    public static void calculate2() {
+    public static void calculateSumN() {
         int n = 42;
         int a = n / 10;
         int b = n % 10;
@@ -30,7 +30,7 @@ public class Work2 {
                 "; a=" + a +
                 "; b=" + b);
     }
-    public static void calculate3() {
+    public static void calculateThreeNumbers() {
         int n = 123;
         int a = n / 100;
         int b = n / 10 % 10;
@@ -41,23 +41,23 @@ public class Work2 {
                 "; b=" + b +
                 "; c=" + c) ;
     }
-    public static void calculate4() {
+    public static void calculateInteger() {
         float  n = 100.35F;
         float a = (int)n;
         System.out.println(a);
     }
-    public static void calculate5() {
+    public static void divisionRemainder() {
         float a = 6;
         float b = 5;
         float c = a / b;
         System.out.println(c);
     }
-    public static void calculate6(){
+    public static void switc(){
         int a = 6;
         int b = 11;
-        a = a + b;
-        b = a - b;
-        a = a - b;
+        int temp = a;
+        a = b;
+        b = a;
         System.out.println("a=" + a + "; b=" + b);
     }
 }
