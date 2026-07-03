@@ -7,19 +7,15 @@ public class Patient {
     public Patient(HealthPlan healthPlan) {
         this.healthPlan = healthPlan;
     }
-
     public Doctor getDoctor() {
         return doctor;
     }
-
     public void setDoctor(Doctor doctor) {
         this.doctor = doctor;
     }
-
     public HealthPlan getHealthPlan() {
         return healthPlan;
     }
-
     public void setHealthPlan(HealthPlan healthPlan) {
         this.healthPlan = healthPlan;
     }

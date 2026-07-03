@@ -5,14 +5,9 @@ public class Therapist extends Doctor{
     public void heal() {
         System.out.println("Лечение болезни");
     }
-
-    // присваиваем доктора пациенту исходя из плана лечения пациента
     public void setDoctor(Patient patient) {
-        // Получаем код
         int code =patient.getHealthPlan().getCode();
         Doctor assignedDoctor;
-
-
         switch (code) {
             case 1:
                 System.out.println("Доктор назначен - Хирург");
@@ -23,15 +18,10 @@ public class Therapist extends Doctor{
                 assignedDoctor = new Dentist();
                 break;
             default:
-                // Обработка всех остальных введенных чисел (от 3 до бесконечности)
                 System.out.println("Доктор назначен - Терапевт");
                 assignedDoctor = this;
         }
-        // Назначаем выбранного доктора
         patient.setDoctor(assignedDoctor);
-        //System.out.println("Доктор назначен");
-        // Он лечит
         assignedDoctor.heal();
-
     }
 }

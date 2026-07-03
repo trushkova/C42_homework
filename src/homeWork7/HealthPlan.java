@@ -12,13 +12,10 @@ public class HealthPlan {
                 + "2 - Дантист \n"
                 + "3 - Терапевт \n");
         this.healthCode = input.nextInt();
-       // this.healthCode = healthCod;
     }
-
     public int getCode() {
         return healthCode;
     }
-
     public void setCode(int healthCode) {
         this.healthCode = healthCode;
     }
